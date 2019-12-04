@@ -1,0 +1,18 @@
+<div class="main">
+    <div class="meio">
+        <h3>Twitter</h3>
+        <form (submit)="searchTweet(tweetForm)" #tweetForm="ngForm">
+            <input type="text" autocomplete="off" name="tweet" ngModel #tweet="ngModel">
+            <input type="submit">
+        </form>
+    </div>
+
+    <div class="twitterdiv">
+        <mat-nav-list multi=true>
+            <mat-list-item *ngFor="let twt of tweets">
+                <h3 matLine> {{ twt.user.name }} </h3>
+                <p matLine> {{ twt.text }} </p>
+            </mat-list-item>
+        </mat-nav-list>
+    </div>
+</div>

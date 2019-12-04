@@ -1,0 +1,23 @@
+.entt {
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 50px;
+    height: 100px;
+    width: 48%;
+    float: right;
+}
+
+.texto{
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 50px;
+    height: 100px;
+    width: 48%;
+    float: left;
+    overflow: auto;
+    height: 420px;
+}
+
+.meio {
+    margin-left: 800px;
+}

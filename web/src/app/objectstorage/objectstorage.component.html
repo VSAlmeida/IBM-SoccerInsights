@@ -1,0 +1,71 @@
+<div class="main">
+    <div class="meio">
+            <h3>Escolha um arquivo para ser analizado</h3>
+            <div class="divflex"> 
+                <input type="file" class="btn " accept="text/plain, .pdf, .doc" (change)="inputFileChange($event)">
+                <i class="fa fa-check fa-2x" *ngIf="flag"></i>
+            </div>
+    </div>
+
+   <!-- <div>
+        <mat-nav-list multi=true *ngIf=nlu>
+            <mat-list-item *ngFor="let entitie of entities">
+                <h3 matLine> {{ entitie.type }} </h3>
+                <p matLine> {{ entitie.text }} </p>
+            </mat-list-item>
+        </mat-nav-list>
+    </div> --> 
+
+    <div class="texto">
+        <p *ngFor="let o of Textovar">
+            {{o}}
+        </p>
+
+    </div>
+
+<div class="entt" *ngIf="flag">
+        <div> 
+                <mat-expansion-panel>
+                    <mat-expansion-panel-header>
+                        Time
+                    </mat-expansion-panel-header>
+                    <p *ngFor="let t of Times"> {{t}} </p>
+                </mat-expansion-panel>
+            </div>
+            <div>
+                <mat-expansion-panel>
+                    <mat-expansion-panel-header>
+                        Jogador
+                    </mat-expansion-panel-header>
+                    <p *ngFor="let j of Jogador"> {{j}} </p>
+                </mat-expansion-panel>
+            </div>
+            <div>
+                <mat-expansion-panel>
+                    <mat-expansion-panel-header>
+                        Placar
+                    </mat-expansion-panel-header>
+                    <p *ngFor="let p of Placar"> {{p}} </p>
+                </mat-expansion-panel>
+            </div>
+            <div>
+                <mat-expansion-panel>
+                    <mat-expansion-panel-header>
+                        Tempo de gol
+                    </mat-expansion-panel-header>
+                    <p *ngFor="let g of Gol"> {{g}} </p>
+                </mat-expansion-panel>
+            </div>
+            
+
+</div>
+<div class="texto">
+
+</div>
+
+
+
+
+
+
+</div>
